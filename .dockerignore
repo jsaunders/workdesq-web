@@ -1,0 +1,10 @@
+.idea
+.git
+
+ DSO ini directory : /etc/php5/apache2/conf.d
+      Install Status : /etc/php5/cli/conf.d/newrelic.ini created
+      Install Status : /etc/php5/apache2/conf.d/newrelic.ini created
+
+
+       REPLACE_WITH_REAL_KEY
+

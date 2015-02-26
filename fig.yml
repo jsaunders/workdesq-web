@@ -1,0 +1,19 @@
+wordpress:
+  build: .
+  links:
+   - db
+  ports:
+   - "80:80"
+  environment:
+    DB_NAME: wordpress
+    DB_USER: admin
+    DB_PASS: "pass"
+    DB_HOST: "3306"
+    DB_PORT: "db"
+    TABLE_PREFIX: wp_
+db:
+  image: tutum/mysql:5.6
+  environment:
+    MYSQL_PASS: "pass"
+  ports:
+   - "3306:3306"
